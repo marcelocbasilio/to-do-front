@@ -152,4 +152,6 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
+yarn.lock
+
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,react,linux

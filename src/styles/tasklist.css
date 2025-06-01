@@ -1,0 +1,129 @@
+section.task-list {
+  background: var(--shapes);
+  border-radius: 1rem;
+  margin-top: -10rem;
+  padding: 4.375rem 3.75rem;
+  filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.06));
+}
+section.task-list header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.task-list header h2 {
+  color: var(--text-title);
+  font-size: 2.25rem;
+}
+section.task-list header .input-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  background: #fff;
+  font-size: 1rem;
+}
+section.task-list header .input-group input {
+  flex: 1;
+  background: var(--background);
+  border: none;
+  color: var(--text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+section.task-list header .input-group input::placeholder {
+  color: var(--text-light);
+}
+section.task-list header .input-group button {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.875rem;
+  transition: filter 0.2s;
+}
+section.task-list header .input-group button:hover {
+  filter: brightness(0.95);
+}
+section.task-list main {
+  margin-top: 3rem;
+}
+section.task-list main ul {
+  list-style: none;
+}
+section.task-list main ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.0625rem solid var(--background);
+  padding: 1rem 0;
+}
+section.task-list main ul li div {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  outline: 0;
+}
+section.task-list main ul li div p {
+  font-size: 1rem;
+  color: var(--text);
+}
+section.task-list main ul li div.completed p {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+section.task-list main ul li div .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 0.875rem;
+  margin-bottom: 1.125rem;
+}
+section.task-list main ul li div .checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.task-list main ul li div .checkbox-container input:checked ~ .checkmark {
+  background-color: var(--blue);
+}
+section.task-list main ul li div .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+section.task-list main ul li div .checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--background);
+  border-radius: 0.125rem;
+}
+section.task-list main ul li div .checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.375rem;
+  top: 0.1875rem;
+  width: 0.1875rem;
+  height: 0.375rem;
+  border: solid white;
+  border-width: 0 0.125rem 0.125rem 0;
+  transform: rotate(45deg);
+}
+section.task-list main ul li button {
+  background: transparent;
+  border: none;
+}
+section.task-list main ul li button svg {
+  color: var(--red);
+}
+section.task-list main ul li button:hover svg {
+  filter: brightness(0.5);
+}
+
+/*# sourceMappingURL=tasklist.css.map */

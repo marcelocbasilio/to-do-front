@@ -9,6 +9,12 @@
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "babel-loader": "^10.0.0",
     "typescript": "^5.8.3"
   }
 }
